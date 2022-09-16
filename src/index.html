@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Easy Bank</title>
     <link rel="icon" type="image/x-icon" href="/src//assets//images//favicon-32x32.png" />
   </head>
-  <body class="font-my-fontFamily font-my-fontWeight_400">
+  <body class="font-my-fontFamily font-my-fontWeight_400 box-border">
     <!-- Nav  -->
     <header>
       <nav class="container mx-auto px-8 md:px-10 py-4">
         <div class="flex justify-between items-center bg-slate-500,">
-          <img src="./assets/images/logo.svg" alt="log" class="w30 h-5" />
+          <img src="./assets/images/logo.svg" alt="log" class="w-30 h-5" />
 
           <div class="hidden md:flex items-center space-x-4 text-my-grayishBlue">
             <a href="/">Home</a>
@@ -39,26 +41,31 @@
             stroke-width="1.5"
             stroke="currentColor"
             class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </div>
       </nav>
     </header>
 
     <!-- Hero  -->
-    <section class="flex flex-col-reverse md:flex-row justify-center, items-center bg-my-white">
-      <div class="flex flex-col w-full md:w-1/2 justify-start items-center md:pl-16 text-center md:text-left px-3">
-        <h1 class="text-5xl leading-leading-12 mb-4">
+    <section
+      class="flex flex-col-reverse md:flex-row justify-center items-center bg-my-white pl-0 md:pl-14 lg:pl-28">
+      <div
+        class="md:w-1/2 justify-start flex flex-col items-center md:block md:pl-16 text-left md:text-left px-3">
+        <h1 class="text-5xl mb-4 text-left font-my-fontWeight_300">
           Next generation <br />
           digital bank
         </h1>
-        <p class="text-my-grayishBlue text-my-fontSize mb-6">
-          Take your financial life online. Your Easybank account will be a one-step-shop for spending, saving, budgeting,
-          investing, and much more.
+        <p class="text-my-grayishBlue text-my-fontSize mb-6 text-center md:text-left">
+          Take your financial life online. Your Easybank account will be a one-step-shop for
+          spending, saving, budgeting, investing, and much more.
         </p>
 
         <button
-          class="flex px-5 py-2 mb-4 bg-gradient-to-r from-my-limegreen to-my-brightCyan rounded-full text-white font-my-fontWeight_700">
+          class="inline px-5 py-2 mb-12 bg-gradient-to-r from-my-limegreen to-my-brightCyan rounded-full text-white font-my-fontWeight_700">
           Request Invite
         </button>
       </div>
@@ -78,42 +85,52 @@
 
     <!-- Why choose Easybank?  -->
     <section class="bg-my-lightGrayishBlue">
-      <div class="container mx-auto py-28 px-28">
+      <div class="container mx-auto py-28 md:px-14 lg:px-28">
         <h2 class="text-4xl mb-6 text-center md:text-left">Why choose Easybank?</h2>
         <p class="text-my-grayishBlue text-my-fontSize text-center md:text-left">
-          We leverage Open Banking to turn your bank account into your financial hub.<br />Control your finances like before.
+          We leverage Open Banking to turn your bank account into your financial hub.<br />Control
+          your finances like before.
         </p>
 
-        <div class="flex flex-col md:flex-row items-center justify-around mt-16 space-y-16 md:space-y-0">
-          <div class="md:w-1/4 flex flex-col md:block text-center md:text-left items-center px-2">
+        <div
+          class="flex flex-col flex-wrap md:flex-row items-center justify-around mt-16 space-y-16 md:space-y-0">
+          <div
+            class="md:w-1/2 lg:w-1/4 flex flex-col text-center md:text-left md:flex md:flex-col items-center px-2">
             <img class="mb-5" src="./assets/images/icon-online.svg" alt="" />
             <h3 class="text-2xl mb-4">Online Banking</h3>
             <p class="text-my-grayishBlue">
-              Our modern web and mobile application allow you to keep track of your finances wherever you are in the world.
+              Our modern web and mobile application allow you to keep track of your finances
+              wherever you are in the world.
             </p>
           </div>
 
-          <div class="md:w-1/4 flex flex-col md:block text-center md:text-left items-center px-2">
+          <div
+            class="md:w-1/2 lg:w-1/4 flex flex-col text-center md:text-left md:flex md:flex-col items-center px-2">
             <img class="mb-5" src="./assets/images/icon-budgeting.svg" alt="" />
             <h3 class="text-2xl mb-4">Simple Budgeting</h3>
             <p class="text-my-grayishBlue">
-              Our modern web and mobile application allow you to keep track of your finances wherever you are in the world.
+              Our modern web and mobile application allow you to keep track of your finances
+              wherever you are in the world.
             </p>
           </div>
 
-          <div class="md:w-1/4 flex flex-col md:block text-center md:text-left items-center px-2">
+          <div
+            class="md:w-1/2 lg:w-1/4 flex flex-col text-center md:text-left md:flex md:flex-col items-center px-2">
             <img class="mb-5" src="./assets/images/icon-onboarding.svg" alt="" />
             <h3 class="text-2xl mb-4">Fast Onboarding</h3>
             <p class="text-my-grayishBlue">
-              Our modern web and mobile application allow you to keep track of your finances wherever you are in the world.
+              Our modern web and mobile application allow you to keep track of your finances
+              wherever you are in the world.
             </p>
           </div>
 
-          <div class="md:w-1/4 flex flex-col md:block text-center md:text-left items-center px-2">
+          <div
+            class="md:w-1/2 lg:w-1/4 flex flex-col text-center md:text-left md:flex md:flex-col items-center px-2 md:py-12">
             <img class="mb-5" src="./assets/images/icon-api.svg" alt="" />
             <h3 class="text-2xl mb-4">Open API</h3>
             <p class="text-my-grayishBlue">
-              Our modern web and mobile application allow you to keep track of your finances wherever you are in the world.
+              Our modern web and mobile application allow you to keep track of your finances
+              wherever you are in the world.
             </p>
           </div>
         </div>
@@ -122,54 +139,54 @@
 
     <!-- Last Articles -->
     <section class="bg-my-veryLightGray">
-      <div class="container mx-auto md:px-28 py-10">
+      <div class="container mx-auto md:px-14 lg:px-28 py-10">
         <h2 class="text-4xl mb-10 text-center md:text-left">Last Articles</h2>
 
-        <div class="flex flex-col md:flex-row space-x-3 px-4 md:px-0">
-          <div class="md:w-1/4 mb-6 bg-white rounded-md overflow-hidden">
+        <div class="flex flex-col flex-wrap md:flex-row px-4 md:px-0">
+          <div class="md:w-1/2 lg:w-1/4 mb-6 rounded-md overflow-hidden px-2">
             <img class="w-full h-72" src="./assets/images/image-currency.jpg" alt="currency" />
-            <div class="p-8 bg-white">
+            <div class="p-8 bg-white fit">
               <p class="text-my-grayishBlue text-xs mb-2">By Claire Robinson</p>
               <p class="mb-2">Recive money in any currency with no fees</p>
               <p class="text-my-grayishBlue text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odio architecto laborum a cupiditate blanditiis
-                quasi vitae at suscipit temporibus!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odio architecto
+                laborum a cupiditate blanditiis quasi vitae at suscipit temporibus!
               </p>
             </div>
           </div>
 
-          <div class="md:w-1/4 mb-6 bg-white rounded-md overflow-hidden">
+          <div class="md:w-1/2 lg:w-1/4 mb-6 rounded-md overflow-hidden px-2">
             <img class="w-full h-72" src="./assets/images/image-restaurant.jpg" alt="currency" />
             <div class="p-8 bg-white">
               <p class="text-my-grayishBlue text-xs mb-2">By Claire Robinson</p>
               <p class="mb-2">Recive money in any currency with no fees</p>
               <p class="text-my-grayishBlue text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odio architecto laborum a cupiditate blanditiis
-                quasi vitae at suscipit temporibus!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odio architecto
+                laborum a cupiditate blanditiis quasi vitae at suscipit temporibus!
               </p>
             </div>
           </div>
 
-          <div class="md:w-1/4 mb-6 bg-white rounded-md overflow-hidden">
+          <div class="md:w-1/2 lg:w-1/4 mb-6 rounded-md overflow-hidden px-2">
             <img class="w-full h-72" src="./assets/images/image-plane.jpg" alt="currency" />
             <div class="p-8 bg-white">
               <p class="text-my-grayishBlue text-xs mb-2">By Claire Robinson</p>
               <p class="mb-2">Recive money in any currency with no fees</p>
               <p class="text-my-grayishBlue text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odio architecto laborum a cupiditate blanditiis
-                quasi vitae at suscipit temporibus!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odio architecto
+                laborum a cupiditate blanditiis quasi vitae at suscipit temporibus!
               </p>
             </div>
           </div>
 
-          <div class="md:w-1/4 mb-6 bg-white rounded-md overflow-hidden">
+          <div class="md:w-1/2 lg:w-1/4 mb-6 rounded-md overflow-hidden px-2">
             <img class="w-full h-72" src="./assets/images/image-confetti.jpg" alt="currency" />
             <div class="p-8 bg-white">
               <p class="text-my-grayishBlue text-xs mb-2">By Claire Robinson</p>
               <p class="mb-2">Recive money in any currency with no fees</p>
               <p class="text-my-grayishBlue text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odio architecto laborum a cupiditate blanditiis
-                quasi vitae at suscipit temporibus!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odio architecto
+                laborum a cupiditate blanditiis quasi vitae at suscipit temporibus!
               </p>
             </div>
           </div>
