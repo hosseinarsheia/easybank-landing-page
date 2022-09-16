@@ -31,7 +31,10 @@ module.exports = {
       lineHeight: {
         'leading-12': '3.5rem',
       },
+      variants: {
+        fill: ['hover', 'focus'],
+      },
     },
   },
   plugins: [],
-}
+};
