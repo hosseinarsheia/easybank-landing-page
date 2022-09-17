@@ -4,14 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link href="/dist/output.css" rel="stylesheet" /> -->
     <title>Easy Bank</title>
     <link rel="icon" type="image/x-icon" href="/src//assets//images//favicon-32x32.png" />
+
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+
+        content: ['./src/**/*.{html,js}'],
+        theme: {
+          extend: {
+            colors: {
+              'my-darkBlue': 'hsl(233, 26%, 24%)',
+              'my-limegreen': 'hsl(136, 65%, 51%)',
+              'my-brightCyan': ' hsl(192, 70%, 51%)',
+              'my-grayishBlue': 'hsl(233, 8%, 62%)',
+              'my-lightGrayishBlue': 'hsl(220, 16%, 96%)',
+              'my-veryLightGray': 'hsl(0, 0%, 98%)',
+              'my-white': 'hsl(0, 0%, 100%)',
+              'my-dark-theme': '#121212',
+            },
+
+            fontSize: {
+              'my-fontSize': '18px',
+            },
+
+            fontWeight: {
+              'my-fontWeight_300': '300',
+              'my-fontWeight_400': '400',
+              'my-fontWeight_700': '700',
+            },
+
+            fontFamily: {
+              'my-fontFamily': ['Public Sans', 'serif'],
+            },
+            lineHeight: {
+              'leading-12': '3.5rem',
+            },
+            variants: {
+              fill: ['hover', 'focus'],
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
   </head>
   <body class="font-my-fontFamily font-my-fontWeight_400 box-border relative">
     <!-- Nav  -->
