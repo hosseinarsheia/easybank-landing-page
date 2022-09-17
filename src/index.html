@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,43 +13,119 @@
     <title>Easy Bank</title>
     <link rel="icon" type="image/x-icon" href="/src//assets//images//favicon-32x32.png" />
   </head>
-  <body class="font-my-fontFamily font-my-fontWeight_400 box-border">
+  <body class="font-my-fontFamily font-my-fontWeight_400 box-border relative">
     <!-- Nav  -->
-    <header>
+
+    <header class="dark:bg-my-dark-theme">
       <nav class="container mx-auto px-8 md:px-10 py-4">
         <div class="flex justify-between items-center bg-slate-500,">
           <img src="./assets/images/logo.svg" alt="log" class="w-30 h-5" />
 
           <div class="hidden md:flex items-center space-x-4 text-my-grayishBlue">
-            <a class="hover:border-b-2 hover:text-black border-my-limegreen" href="/">Home</a>
-            <a class="hover:border-b-2 hover:text-black border-my-limegreen" href="/">About</a>
-            <a class="hover:border-b-2 hover:text-black border-my-limegreen" href="/">Contact</a>
-            <a class="hover:border-b-2 hover:text-black border-my-limegreen" href="/">Blog</a>
-            <a class="hover:border-b-2 hover:text-black border-my-limegreen" href="/">Careers</a>
+            <a
+              class="hover:border-b-2 hover:text-black hover:dark:text-white border-my-limegreen"
+              href="/"
+              >Home</a
+            >
+            <a
+              class="hover:border-b-2 hover:text-black hover:dark:text-white border-my-limegreen"
+              href="/"
+              >About</a
+            >
+            <a
+              class="hover:border-b-2 hover:text-black hover:dark:text-white border-my-limegreen"
+              href="/"
+              >Contact</a
+            >
+            <a
+              class="hover:border-b-2 hover:text-black hover:dark:text-white border-my-limegreen"
+              href="/"
+              >Blog</a
+            >
+            <a
+              class="hover:border-b-2 hover:text-black hover:dark:text-white border-my-limegreen"
+              href="/"
+              >Careers</a
+            >
           </div>
-
           <div
             id="floatMenu"
-            class="invisible flex flex-col absolute left-0 right-0 bg-white mx-5 top-20 z-10 text-center space-y-4 py-4 rounded-md">
-            <a class="text-my-grayishBlue hover:text-my-limegreen" href="#">Home</a>
-            <a class="text-my-grayishBlue hover:text-my-limegreen" href="#">About</a>
-            <a class="text-my-grayishBlue hover:text-my-limegreen" href="#">Contact</a>
-            <a class="text-my-grayishBlue hover:text-my-limegreen" href="#">Blog</a>
-            <a class="text-my-grayishBlue hover:text-my-limegreen" href="#">Careers</a>
+            class="invisible flex max-w-sm mx-auto flex-col absolute left-0 right-0 bg-white top-20 z-10 text-center space-y-4 py-4 rounded-md">
+            <a
+              class="text-my-grayishBlue hover:text-my-limegreen dark:hover:text-my-limegreen"
+              href="#"
+              >Home</a
+            >
+            <a
+              class="text-my-grayishBlue hover:text-my-limegreen dark:hover:text-my-limegreen"
+              href="#"
+              >About</a
+            >
+            <a
+              class="text-my-grayishBlue hover:text-my-limegreen dark:hover:text-my-limegreen"
+              href="#"
+              >Contact</a
+            >
+            <a
+              class="text-my-grayishBlue hover:text-my-limegreen dark:hover:text-my-limegreen"
+              href="#"
+              >Blog</a
+            >
+            <a
+              class="text-my-grayishBlue hover:text-my-limegreen dark:hover:text-my-limegreen"
+              href="#"
+              >Careers</a
+            >
           </div>
 
-          <button
-            class="hidden md:flex px-5 py-2 bg-gradient-to-r from-my-limegreen to-my-brightCyan rounded-full text-white text-xs font-my-fontWeight_700">
-            Request Invite
-          </button>
+          <div class="flex flex-row space-x-4">
+            <button
+              class="hidden md:flex px-5 py-2 bg-gradient-to-r from-my-limegreen to-my-brightCyan rounded-full text-white text-xs font-my-fontWeight_700">
+              Request Invite
+            </button>
+
+            <div
+              class="dark:text-black dark:bg-white text-sm rounded-full p-1 hidden md:flex"
+              onclick="toggleDarkMode()">
+              <div class="hidden dark:flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+              </div>
+
+              <div class="dark:hidden flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+              </div>
+            </div>
+          </div>
 
           <svg
             onclick="hambergerMenuHandler()"
             id="hambergerMenu"
-            class="w-8 h-8 flex md:hidden"
+            class="w-8 h-8 flex md:hidden dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            fill="currentColor"
+            fill="currentColor "
             class="w-6 h-6">
             <path
               fill-rule="evenodd"
@@ -60,7 +136,7 @@
           <svg
             onclick="hambergerMenuHandler()"
             id="XMark"
-            class="w-8 h-8 hidden"
+            class="w-8 h-8 hidden dark:text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
@@ -76,14 +152,14 @@
 
     <!-- Hero  -->
     <section
-      class="flex flex-col-reverse md:flex-row justify-center items-center bg-my-white pl-0 md:pl-14 lg:pl-28">
+      class="flex flex-col-reverse md:flex-row justify-center items-center bg-my-white dark:bg-my-dark-theme pl-0 md:pl-14 lg:pl-28">
       <div
         class="md:w-1/2 justify-start flex flex-col items-center md:block md:pl-16 text-left md:text-left px-4">
-        <h1 class="text-5xl mb-4 text-left font-my-fontWeight_300">
+        <h1 class="text-4xl lg:text-5xl mb-4 text-left font-my-fontWeight_300 dark:text-white">
           Next generation <br />
           digital bank
         </h1>
-        <p class="text-my-grayishBlue text-my-fontSize mb-6 text-center md:text-left">
+        <p class="text-my-grayishBlue text-sm lg:text-my-fontSize mb-6 text-center md:text-left">
           Take your financial life online. Your Easybank account will be a one-step-shop for
           spending, saving, budgeting, investing, and much more.
         </p>
@@ -98,9 +174,9 @@
         <img class="hidden md:flex h-full" src="./assets/images/bg-intro-desktop.svg" alt="intro" />
         <img class="flex md:hidden h-full" src="./assets/images/bg-intro-mobile.svg" alt="intro" />
 
-        <div class="absolute overflow-hidden">
+        <div class="absolute right-0 overflow-hidden">
           <img
-            class="top:0 -translate-y-32 md:translate-x-20 bg-transparent px-2 overflow-hidden"
+            class="-translate-y-32 md:translate-x-20 bg-transparent px-2 overflow-hidden"
             src="./assets/./images/image-mockups.png"
             alt="mobile mockups" />
         </div>
@@ -108,9 +184,9 @@
     </section>
 
     <!-- Why choose Easybank?  -->
-    <section class="bg-my-lightGrayishBlue">
+    <section class="bg-my-lightGrayishBlue dark:bg-my-dark-theme">
       <div class="container mx-auto px-4 py-28">
-        <h2 class="text-4xl mb-6 text-center lg:text-left">Why choose Easybank?</h2>
+        <h2 class="text-4xl mb-6 text-center lg:text-left dark:text-white">Why choose Easybank?</h2>
         <p class="text-my-grayishBlue text-my-fontSize text-center lg:text-left">
           We leverage Open Banking to turn your bank account into your financial hub.<br />Control
           your finances like before.
@@ -121,7 +197,7 @@
           <div
             class="md:w-1/2 lg:w-1/4 flex flex-col text-center md:text-left md:flex md:flex-col items-center lg:items-start px-2">
             <img class="mb-5" src="./assets/images/icon-online.svg" alt="" />
-            <h3 class="text-2xl mb-4">Online Banking</h3>
+            <h3 class="text-2xl mb-4 dark:text-white">Online Banking</h3>
             <p class="text-my-grayishBlue">
               Our modern web and mobile application allow you to keep track of your finances
               wherever you are in the world.
@@ -131,7 +207,7 @@
           <div
             class="md:w-1/2 lg:w-1/4 flex flex-col text-center md:text-left md:flex md:flex-col items-center lg:items-start px-2">
             <img class="mb-5" src="./assets/images/icon-budgeting.svg" alt="" />
-            <h3 class="text-2xl mb-4">Simple Budgeting</h3>
+            <h3 class="text-2xl mb-4 dark:text-white">Simple Budgeting</h3>
             <p class="text-my-grayishBlue">
               Our modern web and mobile application allow you to keep track of your finances
               wherever you are in the world.
@@ -141,7 +217,7 @@
           <div
             class="md:w-1/2 lg:w-1/4 flex flex-col text-center md:text-left md:flex md:flex-col items-center lg:items-start px-2">
             <img class="mb-5" src="./assets/images/icon-onboarding.svg" alt="" />
-            <h3 class="text-2xl mb-4">Fast Onboarding</h3>
+            <h3 class="text-2xl mb-4 dark:text-white">Fast Onboarding</h3>
             <p class="text-my-grayishBlue">
               Our modern web and mobile application allow you to keep track of your finances
               wherever you are in the world.
@@ -151,7 +227,7 @@
           <div
             class="md:w-1/2 lg:w-1/4 flex flex-col text-center md:text-left md:flex md:flex-col items-center lg:items-start px-2 md:py-12">
             <img class="mb-5" src="./assets/images/icon-api.svg" alt="" />
-            <h3 class="text-2xl mb-4">Open API</h3>
+            <h3 class="text-2xl mb-4 dark:text-white">Open API</h3>
             <p class="text-my-grayishBlue">
               Our modern web and mobile application allow you to keep track of your finances
               wherever you are in the world.
@@ -162,16 +238,17 @@
     </section>
 
     <!-- Last Articles -->
-    <section class="bg-my-veryLightGray">
+    <section class="bg-my-veryLightGray dark:bg-my-dark-theme">
       <div class="container mx-auto px-4 py-10">
-        <h2 class="text-4xl mb-10 text-center lg:text-left">Last Articles</h2>
+        <h2 class="text-4xl mb-10 text-center lg:text-left dark:text-white">Last Articles</h2>
 
         <div class="flex flex-col flex-wrap md:flex-row px-4 md:px-0">
           <div class="md:w-1/2 lg:w-1/4 mb-6 rounded-md overflow-hidden px-2">
             <img class="w-full h-72" src="./assets/images/image-currency.jpg" alt="currency" />
-            <div class="p-8 bg-white">
+            <div class="p-8 bg-white dark:bg-my-dark-theme">
               <p class="text-my-grayishBlue text-xs mb-2">By Claire Robinson</p>
-              <p class="mb-2 hover:text-my-limegreen hover:cursor-pointer">
+              <p
+                class="mb-2 hover:text-my-limegreen dark:hover:text-my-limegreen hover:cursor-pointer dark:text-white">
                 Recive money in any currency with no fees
               </p>
               <p class="text-my-grayishBlue text-sm">
@@ -182,9 +259,10 @@
 
           <div class="md:w-1/2 lg:w-1/4 mb-6 rounded-md overflow-hidden px-2">
             <img class="w-full h-72" src="./assets/images/image-restaurant.jpg" alt="currency" />
-            <div class="p-8 bg-white">
+            <div class="p-8 bg-white dark:bg-my-dark-theme">
               <p class="text-my-grayishBlue text-xs mb-2">By Claire Robinson</p>
-              <p class="mb-2 hover:text-my-limegreen hover:cursor-pointer">
+              <p
+                class="mb-2 hover:text-my-limegreen dark:hover:text-my-limegreen hover:cursor-pointer dark:text-white">
                 Recive money in any currency with no fees
               </p>
               <p class="text-my-grayishBlue text-sm">
@@ -195,9 +273,10 @@
 
           <div class="md:w-1/2 lg:w-1/4 mb-6 rounded-md overflow-hidden px-2">
             <img class="w-full h-72" src="./assets/images/image-plane.jpg" alt="currency" />
-            <div class="p-8 bg-white">
+            <div class="p-8 bg-white dark:bg-my-dark-theme">
               <p class="text-my-grayishBlue text-xs mb-2">By Claire Robinson</p>
-              <p class="mb-2 hover:text-my-limegreen hover:cursor-pointer">
+              <p
+                class="mb-2 hover:text-my-limegreen dark:hover:text-my-limegreen hover:cursor-pointer dark:text-white">
                 Recive money in any currency with no fees
               </p>
               <p class="text-my-grayishBlue text-sm">
@@ -208,9 +287,10 @@
 
           <div class="md:w-1/2 lg:w-1/4 mb-6 rounded-md overflow-hidden px-2">
             <img class="w-full h-72" src="./assets/images/image-confetti.jpg" alt="currency" />
-            <div class="p-8 bg-white">
+            <div class="p-8 bg-white dark:bg-my-dark-theme">
               <p class="text-my-grayishBlue text-xs mb-2">By Claire Robinson</p>
-              <p class="mb-2 hover:text-my-limegreen hover:cursor-pointer">
+              <p
+                class="mb-2 hover:text-my-limegreen dark:hover:text-my-limegreen hover:cursor-pointer dark:text-white">
                 Recive money in any currency with no fees
               </p>
               <p class="text-my-grayishBlue text-sm">

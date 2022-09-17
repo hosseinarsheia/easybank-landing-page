@@ -13,6 +13,7 @@ module.exports = {
         'my-lightGrayishBlue': 'hsl(220, 16%, 96%)',
         'my-veryLightGray': 'hsl(0, 0%, 98%)',
         'my-white': 'hsl(0, 0%, 100%)',
+        'my-dark-theme': '#121212',
       },
 
       fontSize: {

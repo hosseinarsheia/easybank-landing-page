@@ -7,3 +7,7 @@ function hambergerMenuHandler(params) {
   XMark.classList.toggle('hidden');
   floatMenu.classList.toggle('invisible');
 }
+
+function toggleDarkMode() {
+  document.documentElement.classList.toggle('dark');
+}
